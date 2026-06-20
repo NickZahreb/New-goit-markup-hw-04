@@ -1,0 +1,89 @@
+/* Нижня рамка, яку треба сильно наблизити */
+.header {
+  background-color: rgb(39, 150, 11);
+  border-bottom: 1px solid var(--cornflower);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  background-color: rgb(184, 216, 176);
+  /* test */
+}
+
+.header-logo {
+  display: block;
+
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+}
+
+.menu-nav {
+  flex-grow: 1;
+  padding-left: 76px;
+}
+
+.menu-list {
+  display: flex;
+  column-gap: 40px;
+
+}
+
+.menu-link {
+  display: block;
+
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  /* line-height: 24px; */
+  letter-spacing: 0.02em;
+  color: var(--navy-blue);
+}
+
+.menu-link:hover,
+.menu-link:focus,
+.menu-link:active {
+  color: var(--ocean);
+}
+
+.menu-contact {
+  font-style: normal;
+}
+
+.contact-list {
+  display: flex;
+  column-gap: 40px;
+}
+
+.contact-link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  /* line-height: 24px; */
+  letter-spacing: 0.02em;
+  color: var(--slate);
+}
+
+.contact-link:hover,
+.contact-link:focus {
+  color: var(--ocean);
+
+}
+
+.contact-link,
+.menu-link {
+  white-space: nowrap;
+  /* Текст завжди в один рядок */
+}

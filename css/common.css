@@ -1,0 +1,110 @@
+:root {
+  --iris: #4d5ae5;
+  --ocean: #404bbf;
+  --navy-blue: #2e2f42;
+  --green: #31d0aa;
+  --slate: #434455;
+  --light-slate: #8e8f99;
+  --cornflower: #e7e9fc;
+  --cloud: #f4f4fd;
+  --navy-blue-modal: rgba(46, 47, 66, 0.4);
+  --grey: rgba(46, 47, 66, 0.7);
+  --white: #fff;
+  --dairy: #fcfcfc;
+}
+
+:root {
+  --font-family: "Roboto", sans-serif;
+  --second-family: "Raleway", sans-serif;
+}
+
+
+body {
+  color: #434455;
+  /* Глобальний колір тексту */
+  background-color: #ffffff;
+  /* Загальний фон сторінки */
+
+  /* Твої шрифти, які вже підключені */
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  /* Видаляємо стандартні маркери списків */
+}
+
+a {
+  text-decoration: none;
+  /* Видаляємо підкреслення у посилань */
+  color: inherit;
+  /* Наслідуємо колір тексту для посилань */
+}
+
+img {
+  display: block;
+  /* Ліквідує нижній та правий проміжки рядкового елемента */
+  max-width: 100%;
+  /* Робить картинку гумовою (масштабується під ширину батька) */
+  height: auto;
+  /* Зберігає оригінальні пропорції при звуженні */
+}
+
+
+
+/* --- Компоненти --- */
+.container {
+  min-width: 1158px;
+  max-width: 1158px;
+  /* min-width: 1158px; */
+  margin: 0 auto;
+  padding: 0 15px;
+  /* Захисні падінги для мобільних екранів */
+  width: 100%;
+}
+
+.logo {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.color-primary-brand {
+  color: var(--iris);
+}
+
+.section {
+  padding-top: 120px;
+  /* Падінги за ТЗ */
+  padding-bottom: 120px;
+}
+
+.section-title {
+  margin-bottom: 72px;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: var(--navy-blue);
+}

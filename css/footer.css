@@ -1,0 +1,39 @@
+.footer {
+  min-width: 1158px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  background-color: var(--navy-blue);
+
+  /* Navy-blue / Dark Дуже темний, майже чорний колір (із синім відтінком) фон для футера */
+
+}
+
+.footer .logo {
+  display: block;
+  margin-bottom: 16px;
+
+  color: var(--cloud);
+
+  /* Колір Cloud М'який світло-сірий колір*/
+}
+
+.footer-text {
+  font-size: 16px;
+  /* Розмір шрифту для тексту в футері */
+  font-weight: 400;
+  /* Normal */
+
+  line-height: 1.5;
+  /* line-height: 24px; */
+  letter-spacing: 0.02em;
+  /* Інтервал між літерами для тексту в футері */
+
+  color: var(--cloud);
+
+  /* Колір Cloud М'який світло-сірий колір*/
+}
+
+.footer-item {
+  width: 264px;
+}

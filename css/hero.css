@@ -1,0 +1,78 @@
+.hero {
+  min-width: 1158px;
+  max-width: 1440px;
+  height: 600px;
+  margin: 0 auto;
+
+  background-color: #2e2f42;
+  /* --navy-blue */
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 188px;
+  max-width: 1158px;
+  min-width: 1158px;
+  margin: 0 auto;
+
+
+  /* Захисні падінги для мобільних екранів */
+
+  background-color: #cacd13ce;
+}
+
+
+.hero-title {
+
+
+  max-width: 496px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 48px;
+
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.07;
+  /* line-height: 60px; */
+  letter-spacing: 0.02em;
+  text-align: center;
+  /* Вирівнюємо заголовки секцій по центру */
+
+  color: var(--white);
+}
+
+.button {
+  display: block;
+  margin: 0 auto;
+
+  padding: 16px 32px;
+  min-width: 169px;
+  height: 56px;
+
+  background-color: var(--iris);
+  border: none;
+  border-radius: 4px;
+
+  /* box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15); */
+
+  cursor: pointer;
+  /* Змінюємо курсор при наведенні на кнопку */
+}
+
+.button:hover {
+  background: var(--ocean);
+  background-color: #404bbf;
+  /* Темніший відтінок для ефекту при наведенні */
+}
+
+
+.button .button-text {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  /* line-height: 24px; */
+  letter-spacing: 0.04em;
+  color: var(--white);
+}

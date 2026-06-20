@@ -1,0 +1,56 @@
+.feature {
+  min-width: 1158px;
+  background: var(--cloud);
+  background-color: #bcbce7;
+  /* CLOUD / Light М'який світло-сірий фон для секції особливостей */
+  border: 1px solid #5e5373;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  margin: -1px;
+}
+
+.feature-list {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  justify-content: center;
+  width: 100%;
+
+  border: 1px solid #5e5373;
+
+}
+
+.feature-card {
+  display: block;
+  flex-shrink: 0;
+  width: 264px;
+}
+
+.feature-title {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  /* line-height: 24px; */
+  letter-spacing: 0.02em;
+  color: var(--navy-blue);
+}
+
+.feature-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  /* line-height: 24px; */
+  letter-spacing: 0.02em;
+  color: var(--slate);
+
+}
