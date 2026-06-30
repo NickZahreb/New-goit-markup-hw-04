@@ -4,8 +4,18 @@
   height: 600px;
   margin: 0 auto;
 
+
+
   background-color: #2e2f42;
   /* --navy-blue */
+  background-image: linear-gradient(to bottom, rgba(42, 42, 42, 0.7),
+    rgba(42, 42, 42, 0.7)), url(/images/people-office\ 1.jpg);
+
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
 }
 
 .hero-container {
@@ -20,7 +30,6 @@
 
   /* Захисні падінги для мобільних екранів */
 
-  background-color: #cacd13ce;
 }
 
 
@@ -76,3 +85,22 @@
   letter-spacing: 0.04em;
   color: var(--white);
 }
+
+
+/* .button .button-text {
+  padding: 8px 16px;
+  color: black;
+  background-color: gray;
+  font-size: 14px;
+  transition-property: opacity, font-size, background-color;
+  transition-duration: 1000ms;
+  transition-timing-function: linear;
+  transition-delay: 1000ms;
+
+}
+
+.button .button-text:hover {
+  font-size: 16px;
+  opacity: 1.5;
+  background-color: #d52525;
+} */
