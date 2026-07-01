@@ -4,50 +4,38 @@
   height: 600px;
   margin: 0 auto;
 
-
-
-  background-color: #2e2f42;
-  /* --navy-blue */
-  background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
-
-
+  background-color: var(--navy-blue);
+  background-image: linear-gradient(to bottom,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)),
+    url(../images/people-office.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-
 }
 
 .hero-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 188px;
+
   max-width: 1158px;
   min-width: 1158px;
   margin: 0 auto;
-
-
-  /* Захисні падінги для мобільних екранів */
-
+  padding-top: 188px;
 }
 
-
 .hero-title {
-
-
   max-width: 496px;
-  margin-left: auto;
   margin-right: auto;
   margin-bottom: 48px;
+  margin-left: auto;
 
   font-size: 56px;
   font-weight: 700;
   line-height: 1.07;
-  /* line-height: 60px; */
   letter-spacing: 0.02em;
   text-align: center;
-  /* Вирівнюємо заголовки секцій по центру */
 
   color: var(--white);
 }
@@ -60,47 +48,21 @@
   min-width: 169px;
   height: 56px;
 
-  background-color: var(--iris);
-  border: none;
-  border-radius: 4px;
-
-  /* box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15); */
-
-  cursor: pointer;
-  /* Змінюємо курсор при наведенні на кнопку */
-}
-
-.button:hover {
-  background: var(--ocean);
-  background-color: #404bbf;
-  /* Темніший відтінок для ефекту при наведенні */
-}
-
-
-.button .button-text {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
-  /* line-height: 24px; */
   letter-spacing: 0.04em;
+
   color: var(--white);
+  background-color: var(--iris);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
-/* .button .button-text {
-  padding: 8px 16px;
-  color: black;
-  background-color: gray;
-  font-size: 14px;
-  transition-property: opacity, font-size, background-color;
-  transition-duration: 1000ms;
-  transition-timing-function: linear;
-  transition-delay: 1000ms;
-
+.button:hover,
+.button:focus {
+  background-color: var(--ocean);
 }
-
-.button .button-text:hover {
-  font-size: 16px;
-  opacity: 1.5;
-  background-color: #d52525;
-} */

@@ -1,0 +1,40 @@
+.element {
+    /* 1. Позиціювання */
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+
+    /* 2. Блокова модель (розміри, відступи) */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    padding: 24px;
+    overflow: hidden;
+
+    /* 3. Типографіка */
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
+
+    /* 4. Оформлення */
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    opacity: 1;
+
+    /* 5. Анімація */
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateY(0);
+    animation: fadein 300ms ease;
+}
