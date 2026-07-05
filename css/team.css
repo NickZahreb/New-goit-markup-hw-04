@@ -19,7 +19,7 @@
   border-radius: 0 0 4px 4px;
   padding: 0px 0px 32px;
   width: 264px;
-  height: 380px;
+
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   background: var(--white);
 }
@@ -45,6 +45,7 @@
 }
 
 .team-text {
+  margin-bottom: 8px;
   font-size: 16px;
   font-weight: 400;
   /* Regular */
@@ -53,4 +54,35 @@
   letter-spacing: 0.02em;
   text-align: center;
   color: var(--slate);
+}
+
+.team-social-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+
+}
+
+.team-social-link {
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-color: var(--iris);
+  align-items: center;
+  align-content: center;
+}
+
+.team-social-link:hover,
+.team-social-link:focus,
+.team-social-link:active {
+  background-color: var(--ocean);
+}
+
+.team-social-svg {
+  display: block;
+
+  margin: 0 auto;
+  fill: var(--white);
 }
