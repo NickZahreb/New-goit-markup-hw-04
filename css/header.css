@@ -48,8 +48,7 @@
 }
 
 .menu-link:hover,
-.menu-link:focus,
-.menu-link:active {
+.menu-link:focus {
   color: var(--ocean);
 }
 

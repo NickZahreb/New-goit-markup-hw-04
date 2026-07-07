@@ -1,3 +1,4 @@
+/* ===== Змінні ===== */
 :root {
   --iris: #4d5ae5;
   --ocean: #404bbf;
@@ -18,21 +19,19 @@
   --second-family: "Raleway", sans-serif;
 }
 
-
+/* ===== Базові стилі документа ===== */
 body {
-  color: #434455;
-  /* Глобальний колір тексту */
-  background-color: #ffffff;
-  /* Загальний фон сторінки */
-
-  /* Твої шрифти, які вже підключені */
-  font-family: "Roboto", sans-serif;
-  font-optical-sizing: auto;
+  font-family: var(--font-family);
   font-weight: 400;
   font-style: normal;
+  font-optical-sizing: auto;
   font-variation-settings: "wdth" 100;
+
+  color: var(--slate);
+  background-color: var(--white);
 }
 
+/* ===== Скидання стилів ===== */
 h1,
 h2,
 h3,
@@ -49,36 +48,29 @@ ol {
   padding: 0;
 
   list-style: none;
-  /* Видаляємо стандартні маркери списків */
 }
 
 a {
   text-decoration: none;
-  /* Видаляємо підкреслення у посилань */
+
   color: inherit;
-  /* Наслідуємо колір тексту для посилань */
 }
 
 img {
   display: block;
-  /* Ліквідує нижній та правий проміжки рядкового елемента */
+
   max-width: 100%;
-  /* Робить картинку гумовою (масштабується під ширину батька) */
   height: auto;
-  /* Зберігає оригінальні пропорції при звуженні */
 }
 
-
-
-/* --- Компоненти --- */
+/* ===== Компоненти ===== */
 .container {
+  width: 100%;
   min-width: 1158px;
   max-width: 1158px;
-  /* min-width: 1158px; */
+
   margin: 0 auto;
   padding: 0 15px;
-  /* Захисні падінги для мобільних екранів */
-  width: 100%;
 }
 
 .logo {
@@ -95,16 +87,17 @@ img {
 
 .section {
   padding-top: 120px;
-  /* Падінги за ТЗ */
   padding-bottom: 120px;
 }
 
 .section-title {
   margin-bottom: 72px;
+
   font-size: 36px;
   font-weight: 700;
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
+
   color: var(--navy-blue);
 }

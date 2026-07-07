@@ -4,9 +4,14 @@
   padding-bottom: 100px;
 
   background-color: var(--navy-blue);
+}
 
-  /* Navy-blue / Dark Дуже темний, майже чорний колір (із синім відтінком) фон для футера */
+.footer-section {
+  display: flex;
+}
 
+.footer-info {
+  margin-right: 120px;
 }
 
 .footer .logo {
@@ -14,26 +19,51 @@
   margin-bottom: 16px;
 
   color: var(--cloud);
-
-  /* Колір Cloud М'який світло-сірий колір*/
 }
 
 .footer-text {
-  font-size: 16px;
-  /* Розмір шрифту для тексту в футері */
-  font-weight: 400;
-  /* Normal */
+  width: 264px;
 
+  font-size: 16px;
+  font-weight: 400;
   line-height: 1.5;
-  /* line-height: 24px; */
   letter-spacing: 0.02em;
-  /* Інтервал між літерами для тексту в футері */
 
   color: var(--cloud);
-
-  /* Колір Cloud М'який світло-сірий колір*/
 }
 
-.footer-item {
-  width: 264px;
+.footer-social-title {
+  margin-bottom: 16px;
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+
+  color: var(--white);
+}
+
+.footer-social-list {
+  display: flex;
+
+  gap: 16px;
+}
+
+.footer-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+  background-color: var(--iris);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: var(--ocean);
 }
